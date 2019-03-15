@@ -1,30 +1,39 @@
 
 
-body{
+body {
     background-size: cover;
+	background-color: #F2F3F5;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Helvetica', Geneva, Verdana, sans-serif;
 }
 
-
-.inputSheet{
-    border: solid 4px black;
-    box-sizing: border-box;
-    max-width: 100%;
-    margin: 50px;
+.direct {
+	padding-top: 60px;
+    text-align: center;
+    margin: 0;
 }
 
-span{
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
+h1 {
+	color: #555;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 20px
 }
 
-button{
+.inputSheet {
+	position: relative;
+    max-width: 90%;
+    margin: 0px auto;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+button {
     width: 150px;
-    background-color: white;
+    background-color: #AAC9FF;
     color: black;
-    border: 3px solid #555555;
+    border: 3px solid #AAC9FF;
     border-radius: 5px;
     padding: 15px 30px;
     text-decoration: none;
@@ -37,29 +46,58 @@ button{
 }
 
 button:hover {
-    background-color: #555555;
+    background-color: #77A7FF;
+	border: 3px solid #77A7FF;
+	border-radius: 5px;
     color: white;
 }
 
 input[type=text] {
     width: 13%;
     box-sizing: border-box;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 16px;
     background-color: white;
     padding: 12px 20px 12px 5px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+	transition-duration: 0.6s;
   }
 
   input[type=text]:focus {
-    width: 80%;
+    width: 70%;
+  }
+  
+  .logo {
+	  width:43px;
+	  height:43px;
+	  position:absolute;
+	  top:5px;
+	  left:5px;
   }
 
+  .blueBar {
+	  height: 50px;
+  }
 
-  .selectBG{
-    position: relative;
-    left:0;
-    padding: 15px;
+  .selectBG {
+    padding: 30px;
+	text-align: center;
+  }
+  
+  .inputBox {
+	  margin: 5px;
+  }
+  
+  #moreTools {
+	  display: none;
+	  overflow: hidden;
+  }
+
+  #topBar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #3578E5;
   }
